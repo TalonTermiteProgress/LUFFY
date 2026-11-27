@@ -11,4 +11,5 @@ jobs:
         with:
           ref: dev
           fetch-depth: 0
-      - run: python3 .github/luffy_sync.py
+      - run: |
+          git show origin/main:.github/luffy_sync.py | python3 -
